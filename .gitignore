@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Model checkpoints & cache
+models/*.pt
+models/*.onnx
+models/*.engine
+*.pt
+*.pth
+*.onnx
+runs/
+.cache/
+
+# Data & Uploads
+data/uploads/*
+!data/uploads/.gitkeep
+data/results/*
+!data/results/.gitkeep
+uploads/
+outputs/
+temp/
+*.mp4
+*.avi
+*.mov
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
