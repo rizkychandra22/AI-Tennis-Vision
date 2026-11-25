@@ -10,15 +10,47 @@ __pycache__/
 venv/
 ENV/
 
-# Model checkpoints & cache
-models/*.pt
-models/*.onnx
-models/*.engine
+# Archives & Compressed files (CRITICAL)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+
+# Model weights & binary checkpoints (CRITICAL)
+models/*
+!models/.gitkeep
 *.pt
 *.pth
 *.onnx
+*.engine
+*.bin
+*.weights
+*.cbm
+*.pkl
+*.h5
 runs/
 .cache/
+
+# Datasets raw data & caches
+datasets/**/*.zip
+datasets/**/*.cbm
+datasets/**/*.pt
+datasets/**/Dataset/
+datasets/**/data/
+datasets/**/images/
+datasets/**/gts/
+datasets/**/raw_data/
+datasets/**/.cache/
+
+# Video & Media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
 
 # Data & Uploads
 data/uploads/*
@@ -28,12 +60,10 @@ data/results/*
 uploads/
 outputs/
 temp/
-*.mp4
-*.avi
-*.mov
 
 # Environment variables
 .env
+.env.local
 
 # IDE
 .vscode/
